@@ -17,7 +17,6 @@ module.exports = (input_path, output_dir, output_format) => {
 
         return new Promise((resolve, reject) => {
             ffmpeg(input_path)
-                /*.audioCodec('ac3')*/
                 .videoCodec('h264_nvenc')
                 .on('progress', function(progress) {
                     bar.update(progress.percent);
