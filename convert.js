@@ -6,7 +6,7 @@ module.exports = (input_path, output_dir, output_format) => {
         const file_name = input_path
             .split('/')
             .slice(-1)[0]
-            .split('.')[0];
+            .split(/\.(?=[^\.]+$)/)[0];
 
         const full_output_path = `${output_dir}/${file_name}.${output_format}`;
 

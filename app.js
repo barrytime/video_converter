@@ -5,7 +5,7 @@ const input_folder = './input';
 const output_folder = './output';
 const DIR_TO_CONVERT = list_files(input_folder);
 const input_format = 'mkv';
-const output_format = 'mp4';
+const output_format = 'avi';
 
 console.log('Preparing to convert videos\n\n');
 console.log(`Input folder: ${input_folder}`);
